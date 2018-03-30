@@ -2,11 +2,15 @@ html,
 body,
 .container {
   height: 100%;
+  background: #D3CCE3; 
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); 
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 }
 
 .container {
@@ -103,6 +107,7 @@ body {
           transform: translate3d(20px, 0, 0);
   -webkit-transition: .2s ease .5s;
   transition: .2s ease .5s;
+  color: #CCFFFF;
 }
 .timeline .swiper-slide .timeline-text {
   line-height: 1.5;
