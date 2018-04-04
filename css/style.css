@@ -2,9 +2,10 @@ html,
 body,
 .container {
   height: 100%;
-  background: #D3CCE3; 
-  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  
-  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); 
+  background-image: url(/anhbien.jpg);
+ /* background: #E0EAFC; */
+  /*background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); */
 }
 
 body {
