@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Gallery</title>
+
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/picedit.css" />
+<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+	body {
+   background-image: url("sky.jpg");
+	}
+	div.gallery {
+	    margin: 5px;
+	    border: 1px solid #ccc;
+	    float: left;
+	    width: 180px;
+	}
+
+	div.gallery:hover {
+	    border: 1px solid #777;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: auto;
+	}
+
+	div.desc {
+	    padding: 15px;
+	    text-align: center;
+		}
+</style>
+</head>
+<body >
+ <h1 class="title" style ="text-align: center;">All your image saved here!</h1>
+<form name="testform" action="out.php" method="post" enctype="multipart/form-data">
+
+<div class="gallery">
+  <a target="_blank" href="image/maldives.jpg">
+    <img src="image/maldives.jpg" alt="Fjords" width="300" height="200">
+  </a>
+  <div class="desc">Maldives heaven of beach</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image/effent.jpg">
+    <img src="image/effent.jpg" alt="Forest" width="300" height="200">
+  </a>
+  <div class="desc">Romance for couple</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image/nz.jpg">
+    <img src="image/nz.jpg" alt="Northern Lights" width="300" height="200">
+  </a>
+  <div class="desc">New Zealand Try Your Travel here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image/phusi.jpg">
+    <img src="image/phusi.jpg" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc">Sakura and Big Mountain</div>
+</div>
+
+
+<div style="margin-top:30px; text-align: center;">
+    <button type="submit">Submit</button>
+</div>
+
+</form>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/picedit.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.picedit_box').picEdit({
+			imageUpdated: function(img){
+			},
+			formSubmitted: function(){
+			},
+			redirectUrl: false,
+            defaultImage: false
+		});
+	});
+</script>
+
+</body>
+</html>
